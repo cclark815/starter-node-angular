@@ -1,9 +1,9 @@
 var cmd = require('node-cmd');
 var path, node_ssh, ssh, fs;
 fs = require('fs');
-path = require('path');
-node_ssh = require('node-ssh');
-ssh = new node_ssh.NodeSSH(); 
+path = require('path'); 
+const {NodeSSH}= require('node-ssh');
+ssh = new NodeSSH(); 
 
 // the method that starts the deployment process
 function main() {
